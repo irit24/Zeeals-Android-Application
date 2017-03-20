@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:scaleType="centerCrop"
+    tools:ignore="MissingPrefix">
+
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:scaleType="centerCrop"
+
+        android:background="@drawable/bg_transparan"
+
+        >
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="50dp"
+            android:layout_height="86dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="-120dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo_zeaals_ungu" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/logo_zeaals_ungu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grow"
+            fontPath="fonts/SourceSansPro-Regular.ttf"
+android:textStyle="bold"
+            android:textColor="#604878"
+            android:textSize="@dimen/slide_title"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="@dimen/desc_padding"
+            android:paddingRight="@dimen/desc_padding"
+            android:text="Dapatkan diskon dengan menonton film hfjh jhfghjb hfhg hfh jhgh jhgjh jhgjh"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18dp"
+            fontPath="fonts/SourceSansPro-Regular.ttf"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

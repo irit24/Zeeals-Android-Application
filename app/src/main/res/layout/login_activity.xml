@@ -1,0 +1,109 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:ignore="MissingPrefix"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:background="@color/colorPrimary"
+
+            android:orientation="vertical"
+
+            >
+
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_transparan"
+                    android:src="@drawable/logo_zeeals" />
+
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:text="Welcome"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30dp" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_marginTop="14dp"
+            android:layout_width="286dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:id="@+id/et_name"
+            android:singleLine="true"
+            android:hint=" Masukan Id"
+            android:drawablePadding="10dp"
+
+            android:inputType="textPersonName"
+            fontPath="fonts/SourceSansPro-Regular.ttf"
+            android:drawableLeft="@drawable/user"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_marginTop="15dp"
+            android:layout_width="286dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:id="@+id/et_pass"
+            android:singleLine="true"
+            android:hint=" Masukan Password"
+            android:inputType="textPassword"
+            fontPath="fonts/SourceSansPro-Regular.ttf"
+            android:drawablePadding="10dp"
+
+            android:drawableLeft="@drawable/password"
+            />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_gravity="center"
+            android:layout_width="286dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            fontPath="fonts/SourceSansPro-Regular.ttf"
+
+            android:background="@drawable/costum_button_round_rect_login"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/secondary_text"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            fontPath="fonts/SourceSansPro-Regular.ttf"
+android:textStyle="bold"
+
+            android:text="Forgot Password?"
+            />
+
+
+
+
+
+</LinearLayout>
