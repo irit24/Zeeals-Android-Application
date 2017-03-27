@@ -1,12 +1,15 @@
 <resources>
     <string name="app_name">Zeeals</string>
-    <string name="title_home">Home</string>
+    <string name="title_order">Order</string>
     <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_setting">Setting</string>
     <string name="next">Next</string>
     <string name="skip">Skip</string>
     <string name="start">Start</string>
     <string name="text_title">Solusi online untuk usaha anda.</string>
     <string name="text_desc">Ayo gabung sekarang!</string>
 
+    <string name="title_penjualan">Penjualan</string>
+    <string name="title_pengeluaran">Pengeluaran</string>
+    <string name="title_total">Total</string>
 </resources>

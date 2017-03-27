@@ -27,8 +27,7 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_gravity="center"
-            android:background="@drawable/bg_transparan"
-            android:src="@drawable/logo_zeeals" />
+            android:src="@drawable/ic_logo" />
 
 
     </FrameLayout>
@@ -56,12 +55,12 @@
         android:gravity="center_vertical"
         android:id="@+id/et_website"
         android:singleLine="true"
-        android:hint=" Masukan Website"
+        android:hint="Server Side"
         android:drawablePadding="10dp"
 
         android:inputType="textWebEditText"
         fontPath="fonts/SourceSansPro-Regular.ttf"
-        android:drawableLeft="@drawable/user"
+        android:drawableLeft="@drawable/ic_username"
         android:layout_below="@+id/welcome"
         android:layout_centerHorizontal="true" />
 

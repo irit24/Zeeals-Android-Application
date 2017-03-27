@@ -41,5 +41,13 @@ dependencies {
 
     compile 'com.rengwuxian.materialedittext:library:2.1.4'
 
+//    compile 'com.github.PhilJay:MPAndroidChart:v2.1.6'
+//    compile 'com.github.PhilJay:MPAndroidChart:v3.0.0-beta1'
+
+
+
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.1'
+    compile 'com.github.lecho:hellocharts-android:v1.5.8'
+
     testCompile 'junit:junit:4.12'
 }

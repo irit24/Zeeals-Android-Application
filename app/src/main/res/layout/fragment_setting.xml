@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/fragment_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+         />
+
+<!--<TextView-->
+            <!--android:id="@+id/text_topup"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:drawableLeft="@drawable/avatar"-->
+            <!--android:drawablePadding="@dimen/dp_18"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:padding="@dimen/dp_18"-->
+            <!--android:text="@string/title_order"-->
+            <!--android:textSize="@dimen/text_size_15"-->
+             <!--/>-->
+
+        <LinearLayout
+            android:id="@+id/linear_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_18">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawablePadding="@dimen/dp_18"
+                android:gravity="center_vertical"
+                android:text="Notification"
+                android:textSize="@dimen/text_size_15"
+                 />
+
+            <Switch
+                android:id="@+id/notif_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight="0.20"
+                android:textOff="NO"
+                android:textOn="YES"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_18">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/text_order"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawablePadding="@dimen/dp_18"
+                android:gravity="center_vertical"
+                android:text="Order History"
+                android:textSize="@dimen/text_size_15"
+                 />
+
+            <!--<TextView-->
+                <!--android:id="@+id/text_point"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="135.000 Pts"-->
+                <!--android:textColor="@color/colorPrimary"-->
+                <!--android:textSize="@dimen/text_size_15" /-->
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_18"
+            android:text="Ketentuan Layanan"
+            android:textSize="@dimen/text_size_15"
+             />
+
+        <TextView
+            android:id="@+id/text_privasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_18"
+            android:text="Kebijakan Privasi"
+            android:textSize="@dimen/text_size_15"
+             />
+
+        <TextView
+            android:id="@+id/about_us"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_18"
+            android:text="About us"
+            android:textSize="@dimen/text_size_15"
+             />
+
+
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_gravity="center"
+            android:layout_width="286dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:text="Keluar"
+
+            android:background="@drawable/costum_button_round_rect_login"
+            android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+
+
+</ScrollView>

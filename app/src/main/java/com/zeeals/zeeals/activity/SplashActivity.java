@@ -10,6 +10,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
+import com.zeeals.zeeals.MainActivity;
 import com.zeeals.zeeals.R;
 
 
@@ -43,7 +44,7 @@ public class SplashActivity extends Activity {
         anim = AnimationUtils.loadAnimation(this, R.anim.fade_in);
         anim.reset();
         ImageView iv = (ImageView) findViewById(R.id.image);
-        iv.setImageResource(R.drawable.logo_zeeals);
+        iv.setImageResource(R.drawable.ic_logo);
         iv.clearAnimation();
         iv.startAnimation(anim);
 
@@ -58,7 +59,7 @@ public class SplashActivity extends Activity {
                         waited += 100;
                     }
                     Intent intent = new Intent(SplashActivity.this,
-                            NextActivity.class);
+                            MainActivity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     startActivity(intent);
                     SplashActivity.this.finish();

@@ -26,8 +26,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
                     android:layout_gravity="center"
-                    android:background="@drawable/bg_transparan"
-                    android:src="@drawable/logo_zeeals" />
+                    android:src="@drawable/ic_logo" />
 
 
         </FrameLayout>
@@ -52,12 +51,12 @@
             android:gravity="center_vertical"
             android:id="@+id/et_name"
             android:singleLine="true"
-            android:hint=" Masukan Id"
+            android:hint="User Name"
             android:drawablePadding="10dp"
 
             android:inputType="textPersonName"
             fontPath="fonts/SourceSansPro-Regular.ttf"
-            android:drawableLeft="@drawable/user"
+            android:drawableLeft="@drawable/ic_username"
             />
 
         <com.rengwuxian.materialedittext.MaterialEditText
@@ -68,12 +67,12 @@
             android:gravity="center_vertical"
             android:id="@+id/et_pass"
             android:singleLine="true"
-            android:hint=" Masukan Password"
+            android:hint="Password"
             android:inputType="textPassword"
             fontPath="fonts/SourceSansPro-Regular.ttf"
             android:drawablePadding="10dp"
 
-            android:drawableLeft="@drawable/password"
+            android:drawableLeft="@drawable/ic_password"
             />
 
         <Button

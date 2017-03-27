@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@android:color/white"
-    android:scaleType="centerCrop"
+    android:scaleType="centerInside"
     tools:ignore="MissingPrefix">
 
     >
@@ -15,9 +15,9 @@
         android:layout_centerInParent="true"
         android:gravity="center"
         android:orientation="vertical"
-        android:scaleType="fitXY"
+        android:scaleType="fitXY">
 
-        android:background="@drawable/bg_transparan"
+        <!--android:background="@drawable/bg_transparan"-->
 
         >
 

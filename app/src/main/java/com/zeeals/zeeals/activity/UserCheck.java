@@ -60,12 +60,12 @@ public class UserCheck extends AppCompatActivity {
          editor.commit();
 editor.apply();
 
-         Intent intent = new Intent();
+         Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
 
          intent.putExtra(Name_Web, Web);
          sharedpreferences.edit().putString("nameKey",Web).apply();
 
-         startActivityForResult(intent, 2);
+         startActivity(intent);
 
 
      }

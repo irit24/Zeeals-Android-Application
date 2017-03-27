@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@android:color/white"
-    android:scaleType="centerCrop"
+    android:scaleType="centerInside"
     tools:ignore="MissingPrefix">
 
 >
@@ -16,26 +16,16 @@
         android:gravity="center"
         android:orientation="vertical"
         android:scaleType="centerInside"
-
-        android:background="@drawable/bg_transparan"
+>
+        <!--android:background="@drawable/bg_transparan"-->
 
         >
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="50dp"
-            android:layout_height="86dp"
-
-            android:layout_marginBottom="0dp"
-            android:layout_marginTop="-120dp"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/logo_zeaals_ungu" />
 
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="200dp"
             android:layout_height="200dp"
-            android:src="@drawable/logo_zeaals_ungu" />
+            android:src="@drawable/logo_zeeals" />
 
         <TextView
             android:layout_width="wrap_content"
