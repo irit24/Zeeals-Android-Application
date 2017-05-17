@@ -51,7 +51,7 @@ public class Chart1 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.chart1_activity, null);
+        View rootView = inflater.inflate(R.layout.chart_activity, null);
 
 
         mChart = (LineChart) rootView.findViewById(R.id.chart);

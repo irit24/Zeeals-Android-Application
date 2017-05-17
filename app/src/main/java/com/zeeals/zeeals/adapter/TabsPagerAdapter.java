@@ -1,15 +1,20 @@
 package com.zeeals.zeeals.adapter;
 
+import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentStatePagerAdapter;
 
 import com.zeeals.zeeals.fragment.Chart1;
+import com.zeeals.zeeals.fragment.Chart2;
+import com.zeeals.zeeals.fragment.SettingFragment;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class TabsPagerAdapter extends FragmentPagerAdapter {
+public class TabsPagerAdapter extends FragmentStatePagerAdapter {
+
 	private final List<Fragment> mFragmentList = new ArrayList<>();
 	private final List<String> mFragmentTitleList = new ArrayList<>();
 

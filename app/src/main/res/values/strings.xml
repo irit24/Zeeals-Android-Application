@@ -12,4 +12,19 @@
     <string name="title_penjualan">Penjualan</string>
     <string name="title_pengeluaran">Pengeluaran</string>
     <string name="title_total">Total</string>
+
+    <string name="username_is_not_empty">Username Not Be Empty</string>
+    <string name="password_is_not_empty">Password Not Be Empty</string>
+
+    <string name="login_sukses">Login Sukses</string>
+    <string name="login_gagal">Login Gagal</string>
+    <string name="Loading">Please Wait..</string>
+
+
+    <string name="status_order_1">Waiting For Payment</string>
+    <string name="status_order_2">Waiting For Verification</string>
+    <string name="status_order_3">Payment Verified</string>
+    <string name="status_order_4">Sent</string>
+    <string name="status_order_5">Cancel</string>
+
 </resources>

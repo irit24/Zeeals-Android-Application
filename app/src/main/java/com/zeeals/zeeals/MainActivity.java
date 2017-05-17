@@ -2,10 +2,10 @@ package com.zeeals.zeeals;
 
 
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
-import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -13,6 +13,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+
 import com.zeeals.zeeals.fragment.OrderFragment;
 import com.zeeals.zeeals.fragment.SettingFragment;
 import com.zeeals.zeeals.fragment.TabFragment;
@@ -29,6 +30,8 @@ import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 public class MainActivity extends AppCompatActivity {
     private static final String SELECTED_ITEM = "arg_selected_item";
 
+    private SharedPreferences pref;
+
     private BottomNavigationView mBottomNav;
     private int mSelectedItem = 0;
     Fragment frag;
@@ -42,10 +45,18 @@ public class MainActivity extends AppCompatActivity {
                 .setFontAttrId(R.attr.fontPath)
                 .build()
         );
+        
         setContentView(R.layout.activity_main);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+//        if(getPreferences(0).getBoolean(Constant.IS_LOGGED_IN,true)){
+//
+//            finish();
+//            startActivity(new Intent(this, Login.class));
+//        }
+
+
 
 
         mBottomNav = (BottomNavigationView) findViewById(R.id.navigation);
@@ -57,6 +68,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        pref = getPreferences(0);
+//        initFragment();
+
+
         MenuItem selectedItem;
         if (savedInstanceState != null) {
             mSelectedItem = savedInstanceState.getInt(SELECTED_ITEM, 0);
@@ -67,20 +82,40 @@ public class MainActivity extends AppCompatActivity {
         selectFragment(selectedItem);
     }
 
+//    private void initFragment() {
+//        Intent Intent;
+//        if(pref.getBoolean(Constant.IS_LOGGED_IN,false)){
+//
+//            Intent = new Intent(getApplicationContext(), MainActivity.class);
+//            startActivity(Intent);
+//        }else {
+//            Intent = new Intent(getApplicationContext(), Login.class);
+//            startActivity(Intent);
+//        }
+//    }
+//
+
+    // Showing the status in Snackbar
+
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         outState.putInt(SELECTED_ITEM, mSelectedItem);
         super.onSaveInstanceState(outState);
     }
 
+
     @Override
     public void onBackPressed() {
-        MenuItem homeItem = mBottomNav.getMenu().getItem(1);
+
+
+        MenuItem homeItem = mBottomNav.getMenu().getItem(0);
         if (mSelectedItem != homeItem.getItemId()) {
             // select home item
             selectFragment(homeItem);
+            finish();
         } else {
             super.onBackPressed();
+            finish();
         }
     }
 
@@ -106,6 +141,8 @@ public class MainActivity extends AppCompatActivity {
             FragmentManager fragmentManager = getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.container, fragment);
+
+            getSupportFragmentManager().popBackStack();
             fragmentTransaction.commit();
             if (fragment.isAdded()) {
                 // update selected item
@@ -115,6 +152,7 @@ public class MainActivity extends AppCompatActivity {
                 for (int i = 0; i < mBottomNav.getMenu().size(); i++) {
                     MenuItem menuItem = mBottomNav.getMenu().getItem(i);
                     menuItem.setChecked(menuItem.getItemId() == item.getItemId());
+
                 }
 
 
@@ -122,7 +160,5 @@ public class MainActivity extends AppCompatActivity {
 
 
         }
-
-
-        }
     }
+}

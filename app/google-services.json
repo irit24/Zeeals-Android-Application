@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "63533152624",
+    "firebase_url": "https://zeeals-9f9bf.firebaseio.com",
+    "project_id": "zeeals-9f9bf",
+    "storage_bucket": "zeeals-9f9bf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63533152624:android:69915ced9ef555e0",
+        "android_client_info": {
+          "package_name": "com.zeeals.zeeals"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "63533152624-c7cpi3153369cb1ijgdgn6dsk90heb76.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7vR5_bxO-QrPrcrRtu4B0ozRpF0Zq0-w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -11,6 +11,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -47,25 +48,19 @@ public class UserCheck extends AppCompatActivity {
         et_web=(EditText)findViewById(R.id.et_website);
 
         btn_next=(Button)findViewById(R.id.btn_next);
-        sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+//        sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
 
  btn_next.setOnClickListener(new View.OnClickListener() {
      @Override
      public void onClick(View view) {
 
          String Web = et_web.getText().toString();
-         SharedPreferences.Editor editor = sharedpreferences.edit();
 
-         editor.putString(Name_Web, Web);
-         editor.commit();
-editor.apply();
+         Intent intent = new Intent(getApplicationContext(), Login.class);
 
-         Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+         intent.putExtra("nameKey", Web);
 
-         intent.putExtra(Name_Web, Web);
-         sharedpreferences.edit().putString("nameKey",Web).apply();
-
-         startActivity(intent);
+         startActivityForResult(intent, 2);
 
 
      }
